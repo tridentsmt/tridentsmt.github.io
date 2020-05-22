@@ -16,6 +16,9 @@
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.css" rel="stylesheet" type="text/css">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="vendor/aos/aos.css" rel="stylesheet" type="text/css"/>
+
 
   <!-- Custom styles for this template -->
   <link href="css/full-width-pics.css" rel="stylesheet">
@@ -253,7 +256,7 @@
   </section>
 
   <!-- Header Image- set the background image for the header in the line below -->
-  <header class="py-5 bg-image-full" style="background-image: url('./img/banner3.jpg');">
+  <header class="py-5 bg-image-full img-responsive" style="background-image: url('./img/banner3.jpg');">
     <div class="container" style="height:400px;"></div>
   </header>
 
@@ -292,7 +295,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-sm-12">
-    <div class="wrimagecard wrimagecard-topimage">
+    <div data-aos="zoom-in" data-aos-duration="1500" class="wrimagecard wrimagecard-topimage">
             <div class="wrimagecard-topimage_header">
               <center><i class="fa fa-thumbs-up card-icon" ></i></center>
             </div>
@@ -306,7 +309,7 @@
         </div>
       </div>
       <div class="col-md-4 col-sm-12">
-        <div class="wrimagecard wrimagecard-topimage">
+        <div class="wrimagecard wrimagecard-topimage" data-aos="zoom-in" data-aos-duration="1500" >
             <div class="wrimagecard-topimage_header">
               <center><i class = "fa fa-rocket card-icon"></i></center>
             </div>
@@ -320,7 +323,7 @@
         </div>
       </div>
       <div class="col-md-4 col-sm-12">
-        <div class="wrimagecard wrimagecard-topimage">
+        <div class="wrimagecard wrimagecard-topimage" data-aos="zoom-in" data-aos-duration="1500">
             <div class="wrimagecard-topimage_header">
               <center><i class="fa fa-paper-plane card-icon"> </i></center>
             </div>
@@ -361,18 +364,18 @@
 <section class="py-5 service-section">
   <div class="container">
     <div class="card-group vgr-cards">
-      <div class="card">
+      <div class="card" data-aos="fade-left" data-aos-duration="1500" >
         <div class="card-img-body">
-          <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+          <img class="card-img" src="img/moneyexchange.jpg" alt="Card image cap">
         </div>
         <div class="card-body">
           <h4 class="card-title">MONEY EXCHANGE</h4>
           <p class="card-text">The money exchange or the foreign exchange market is a global decentralised market for trading the currencies. This include all aspects of buying, selling and exchanging currencies at current or determined prices. We deal with more than 30 most popular currencies and we provide our customer a comfortable currency trading zone where they can get the best rate by either single or multiple currency exchange.</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card" data-aos="fade-right" data-aos-duration="1500" >
         <div class="card-img-body">
-          <img class="card-img" src="https://picsum.photos/400/200" alt="Card image cap"></div>
+          <img class="card-img" src="img/forex.jpeg" alt="Card image cap"></div>
         <div class="card-body">
           <h4 class="card-title">EXCHANGE RATE CHARTS</h4>
           <p class="card-text">Featuring live exchange rate chart which provide the best and up-to-date rates from the most popular currencies without commission and service charges. We are specialized more in obscure currencies which are hard to obtain from high street suppliers. We are willing to provide with the most competitive exchange rates on all your holiday, travel, commercial and business needs.</p>
@@ -500,20 +503,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
-
-  <script type="text/javascript">
-    (function($) {
-      $(function() { //on DOM ready 
-            $("#scroller").simplyScroll();
-      });
-     })(jQuery);
-
-     $('.smooth-goto').on('click', function() {  
-    $('html, body').animate({scrollTop: $(this.hash).offset().top - 75}, 1000);
-    return false;
-});
-
-    </script>
+  <script src="vendor/aos/aos.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
