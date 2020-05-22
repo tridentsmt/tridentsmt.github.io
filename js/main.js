@@ -1,4 +1,10 @@
+
 AOS.init();
+
+(function($) {
+
+   })(jQuery);
+
 
   (function($) {
     var speed = 300;
@@ -13,6 +19,11 @@ AOS.init();
         $('div#rate-board').append(first);
     }
 
+    $(function() { //on DOM ready 
+        $("#scroller").simplyScroll();
+    });
+    
     setInterval(tick, pause);
+
 })(jQuery);
 
