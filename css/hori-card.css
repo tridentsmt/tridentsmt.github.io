@@ -1,4 +1,4 @@
-.card {
+.cardh {
   border: none;
   background-color: var(--primary);
   color: var(--accent);
@@ -10,7 +10,7 @@
   border-radius: 0;
 }
 
-.vgr-cards .card {
+.vgr-cards .cardh {
   display: flex;
   flex-flow: wrap;
   flex: 100%;

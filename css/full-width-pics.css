@@ -26,8 +26,9 @@ body {
   color: var(--primary);
   font-size:15px;
   padding-top: 56px;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
+
 
 nav.navbar-style{  
   background-color: var(--primary);
@@ -337,3 +338,462 @@ nav ul {
   
 }
  */
+
+ /* Rate Board */
+
+ .rate-board-table {
+  padding: 0;
+  list-style-type: none;
+  float: left;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.ratebox-table-wrap {
+  box-shadow: 0 0 4px #ccc;
+  -webkit-box-shadow: 0 0 4px #ccc;
+  -moz-box-shadow: 0 0 4px #ccc;
+  background-color: #e9e9e9;
+  width: 99%;
+  float: left;
+}
+
+.flag-country {
+  width: 31%;
+  float: left;
+}
+
+.flag-image-rate {
+  background-color: #c3c2c2;
+  display: inline-block;
+  padding: 8px;
+  width: 100%;
+}
+
+.country-rate-board {
+  background-color: #3e2e36;
+  color: #fff;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+
+.rate-board-table li {
+  float: left;
+  margin-bottom: 22px;
+  width: 100%;
+}
+
+.flag-country-rating {
+  background: #e9e9e9 none repeat scroll 0 0;
+  float: left;
+  width: 69%;
+  height: 96px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.flag-country-rating-head {
+  border-bottom: 1px solid #ccc;
+  color: var(--primary);
+  font-size: 16px;
+  padding: 6px 12px;
+}
+
+.flag-country-rating-list {
+  color: #2b2a2a;
+  font-size: 16px;
+  padding: 5px 12px 0;
+}
+
+.active-box .flag-country-rating, .flag-country-rating:hover, .hoveradd {
+  background: var(--primary) repeat scroll 0 0;
+}
+
+.flag-country-rating:hover .flag-country-rating-head, .flag-country-rating:hover .flag-country-rating-list, .hoveradd .flag-country-rating-head, .hoveradd .flag-country-rating-list {
+  color: var(--accent);
+}
+
+/* RateBoard Middle */
+.rate-board-section {
+  float: left;
+  width: 100%;
+}
+
+.container-box {
+  margin: 163px auto 0;
+}
+.container-box {
+  position: relative;
+  width: 523px;
+  height: 297px;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #FFFFFF;
+  width: 523px;
+  height: 295px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: 0.4s cubic-bezier(0.28, 0.55, 0.385, 1.65);
+  transition: 0.4s cubic-bezier(0.28, 0.55, 0.385, 1.65);
+  cursor: pointer;
+}
+
+.card:nth-child(1) {
+  z-index: 10;
+  top: 0px;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.card:nth-child(2) {
+  z-index: 9;
+  top: -58px;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 1;
+}
+
+.card:nth-child(3) {
+  z-index: 8;
+  top: -115px;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 1;
+}
+
+.card:nth-child(4) {
+  z-index: 7;
+  top: -162px;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 1;
+}
+
+.card:nth-child(5) {
+  z-index: 6;
+  top: -60px;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 1;
+}
+
+.card:nth-child(6) {
+  z-index: 5;
+  top: -75px;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 1;
+}
+
+.card:nth-child(7) {
+  z-index: 4;
+  top: -90px;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: scale(0.4);
+  transform: scale(0.4);
+  opacity: 1;
+}
+
+.card:nth-child(8) {
+  z-index: 3;
+  top: -105px;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: scale(0.3);
+  transform: scale(0.3);
+  opacity: 1;
+}
+
+.card:nth-child(9) {
+  z-index: 2;
+  top: -120px;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: scale(0.2);
+  transform: scale(0.2);
+  opacity: 1;
+}
+
+.card:nth-child(10) {
+  z-index: 1;
+  top: -135px;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  opacity: 1;
+}
+
+.card:nth-child(11) {
+  z-index: 0;
+  top: -150px;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 1;
+}
+
+.card:first-child:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.card:last-child { opacity: 0; }
+
+
+.container-box {margin: 163px auto 0;}
+
+.card {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  text-align: center;
+}
+
+/** rate box style**/
+.rate-board-box {
+  border: 3px solid var(--primary);
+  border-radius: 5px;
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+.rate-board-box-header {
+  background: var(--primary) repeat scroll 0 0;
+  box-shadow: 0 1px 2px #ccc;
+  padding: 7px;
+  text-align: left;
+}
+.country-flag {
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+.rate-board-country {
+	color:var(--accent);
+	font-size: 18px;
+}
+.rate-board-box-content-footer {
+  color: #161718;
+  font-size: 22px;
+}
+
+.rating-box-1 {
+  float: left;
+  font-size: 19px; 
+  width: 100%;
+}
+
+.rating-box {
+  background: var(--primary)  repeat scroll 0 0;
+  border-radius: 7px;
+  color: var(--accent);
+  display: inline-block;
+  height: 132px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  width: 148px;
+  vertical-align:middle;
+  box-shadow: 0 3px 4px #333;
+  -webkit-box-shadow: 0 3px 4px #333;
+  -moz-box-shadow: 0 3px 4px #333;
+}
+.rating-box-2-1 {
+  float: left;
+  font-size: 28px;
+  margin-top: 18px;
+}
+.rating-box-2-3 {
+  clear: both;
+  float: left;
+  margin-left: 6px;
+  margin-top: 3px;
+  width: 100%;
+}
+.rating-box-2-2 {
+  border-bottom: 1px solid;
+  float: left;
+  font-size: 23px;
+  margin: 9px 0 0 12px;
+}
+.rating-box-2-0 {
+  float: right;
+  margin-right: 8px;
+}
+.unit-box-wrap {
+  box-shadow: 0 0 5px #ccc;
+  display: inline-block;
+  height: 100%;
+  margin: 5px 7px;
+  top: 0;
+  width: 100px;  
+  vertical-align:middle;
+}
+.unit-box-header {
+  background-color: #3e2e36;
+  color: #fff;
+  font-size: 24px;
+  padding: 6px 0;   
+}
+.unit-box-value {
+  color: #222121;
+  font-size: 28px;
+  padding: 9px 0;
+  
+}
+.box-list {
+  float: left;
+  margin: 22px 0;
+  width: 100%;
+}
+.rate-board-table {
+  padding: 0;
+  list-style-type: none;
+     float: left;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+.ratebox-table-wrap {
+    box-shadow: 0 0 4px #ccc;
+    -webkit-box-shadow: 0 0 4px #ccc;
+    -moz-box-shadow: 0 0 4px #ccc;
+    background-color: #e9e9e9;
+    width: 99%;
+    float:left;
+}
+.flag-country {
+    width: 31%;
+	float:left;
+}
+
+.flag-image-rate {
+  background-color: #c3c2c2;
+  display: inline-block;
+  padding: 8px;
+  width:100%;
+}
+
+.country-rate-board {
+  background-color: #3e2e36;
+  color: var(--accent);
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+.flag-country-rating {
+  background: #e9e9e9 none repeat scroll 0 0;
+  float: left;
+  width: 69%;
+  height: 96px;
+  cursor:pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.flag-country-rating-head {
+    border-bottom: 1px solid #ccc;
+    color: var(--primary);
+    font-size: 16px;
+    padding: 6px 12px;
+}
+.flag-country-rating-list {
+    color: #2b2a2a;
+    font-size: 16px;
+    padding: 5px 12px 0;
+}
+.rate-board-table li {
+  float: left;
+  margin-bottom: 22px;
+  width: 100%;
+}
+.right-rate-board-table .flag-country {
+    float: right;
+}
+.active-box .flag-country-rating,
+.flag-country-rating:hover,.hoveradd
+ {
+ background: var(--primary)  repeat scroll 0 0;
+}
+.flag-country-rating:hover .flag-country-rating-head,
+.flag-country-rating:hover .flag-country-rating-list,.hoveradd .flag-country-rating-head,.hoveradd .flag-country-rating-list
+{	
+ color: var(--accent);	
+}
+
+
+.active-box .flag-country-rating-head,
+ .active-box .flag-country-rating-list
+ 
+ {
+  color: #fff;
+}
+
+
+
+/** differ font-size for rate borad **/
+
+/* two digit style example like 2.9 */
+
+.rating-box-2-1-two {
+  font-size: 48px;
+  margin-top: 6px;
+  float:left;
+}
+
+
+/* three digit style example like 52.9 */
+
+.rating-box-2-1-three {
+  font-size: 36px;
+  margin-top: 16px;
+  float:left;
+}
+
+
+
+/* four digit style example like 304.9 */
+
+.rating-box-2-1-four {
+  font-size: 28px;
+  margin-top: 22px;
+  float:left;
+}
+/* four digit style for unit box- example like 1000 */
+.unit-box-value-larg-txt {  
+  font-size: 17px;
+  padding: 12px 0;  
+  color:#222121;
+}

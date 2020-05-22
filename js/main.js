@@ -1,41 +1,18 @@
-(function($) {
-    $(function() { //on DOM ready 
-          $("#scroller").simplyScroll();
-    });
-   })(jQuery);
+AOS.init();
 
-   $('.smooth-goto').on('click', function() {  
-  $('html, body').animate({scrollTop: $(this.hash).offset().top - 75}, 1000);
-  return false;
-});
+  (function($) {
+    var speed = 300;
+    var first = 0;
+    var pause = 3000;
 
-(function() {
-    var elements;
-    var windowHeight;
-  
-    function init() {
-      elements = document.querySelectorAll('.animate-fadeIn');
+    function tick() {
+        first = $('div#rate-board :first').remove();
+        $("div#hover_"+first.attr('title')).removeClass('hoveradd');
 
-      windowHeight = window.innerHeight;
+        $("div#hover_"+($('div#rate-board :first').attr('title'))).addClass('hoveradd');
+        $('div#rate-board').append(first);
     }
-  
-    function checkPosition() {
-      for (var i = 0; i < elements.length; i++) {
-        var element = elements[i];
-        var positionFromTop = elements[i].getBoundingClientRect().top;
-  
-        if (positionFromTop - windowHeight <= 0) {
-          element.classList.add('fade-in-element');
-          element.classList.remove('animate-fadeIn');
-        }
-      }
-    }
-  
-    window.addEventListener('scroll', checkPosition);
-    window.addEventListener('resize', init);
-  
-    init();
-    checkPosition();
-  })();
-  AOS.init();
+
+    setInterval(tick, pause);
+})(jQuery);
 
