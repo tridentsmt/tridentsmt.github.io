@@ -797,3 +797,38 @@ nav ul {
   padding: 12px 0;  
   color:#222121;
 }
+
+
+/* Modal Ratings */
+.popup {
+  background-color: #fff;
+  /* left: 0px; */
+  max-width: 610px;
+  z-index: 999;
+  max-height: 400px;
+  overflow: auto;
+  position:fixed;
+  bottom:0px;
+  right:0px;
+  margin:0px;
+  border-width:1px;
+  border-color:var(--primary);
+  border-style:solid;
+}
+
+.popup-heading {
+  background-color: var(--primary);
+  height:40px;
+}
+
+.popup-content{
+  overflow:auto;
+  height:250px;
+  -ms-overflow-style: none;
+
+}
+
+.popup-content::-webkit-scrollbar {
+  display: none;
+}
+
