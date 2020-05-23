@@ -802,56 +802,35 @@ nav ul {
 /* Modal Ratings */
 .popup {
   background-color: #fff;
-  position:fixed;
-  bottom:0px;
-  right:20px;
-  margin:0px;
-  border-radius:4px;
-  border-width:1px;
-  border-color:var(--primary);
-  border-style:solid;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-.popup-max {
-  width:430px;
+  /* left: 0px; */
+  width:450px;
   height:300px;
   max-width: 610px;
   z-index: 999;
   max-height: 400px;
-}
-
-.popup-min {
-  width:270px;
-  height:40px;
-  max-width: 610px;
-  z-index: 999;
-  max-height: 400px;
-  transition: 0.3s;
-  opacity:1;
-}
-.popup-min:hover {
-  cursor:pointer;
-  background-color:#000;
+  overflow: auto;
+  position:fixed;
+  bottom:0px;
+  right:0px;
+  margin:0px;
+  border-width:1px;
+  border-color:var(--primary);
+  border-style:solid;
 }
 
 .popup-heading {
-  border-bottom-width:1px;
-  border-bottom-color:var(--primary);
-  border-bottom-style: solid;
-  color:var(--primary);
-  background-color: rgba(255, 255, 255, 0.975);
+  background-color: var(--primary);
   height:40px;
-  box-shadow: 0 0px 2px 0 rgba(108, 80, 80, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-
 }
 
 .popup-content{
   overflow:auto;
   height:250px;
-  
+  -ms-overflow-style: none;
 
 }
 
+.popup-content::-webkit-scrollbar {
+  display: none;
+}
 
