@@ -23,6 +23,9 @@
 
 
 body {
+  min-width:540px;        /* Suppose you want minimum width of 1000px */
+  width: auto !important;  /* Firefox will set width as auto */
+  width:540px;            /* As IE6 ignores !important it will set width as 1000px; */
   color: var(--primary);
   font-size:15px;
   padding-top: 56px;
