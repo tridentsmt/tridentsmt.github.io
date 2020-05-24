@@ -24,7 +24,7 @@ AOS.init();
     });
     
     $('.smooth-goto').on('click', function() {  
-        $('html, body').animate({scrollTop: $(this.hash).offset().top - 75}, 1000);
+        $('html, body').animate({scrollTop: $(this.hash).offset().top - 70}, 1000);
         return false;
     });
     
